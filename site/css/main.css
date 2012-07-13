@@ -1,0 +1,610 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+:focus {
+  outline: 1; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+.line:after, header.main:after, .topmatter:after, .row:after, .hd:after, .lastUnit:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0 !important;
+  line-height: 0;
+  font-size: xx-large;
+  content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x "; }
+
+.line, header.main, .topmatter, .row, .hd {
+  *zoom: 1; }
+
+.unit, .thumbs li, footer .about, footer .lets-talk,
+footer .links {
+  float: left; }
+
+.size1of1 {
+  float: none; }
+
+.size1of2, .goodreads,
+.seedthings,
+.about,
+.why-mentoring,
+.how-mentoring, footer .about {
+  width: 50%; }
+
+.size1of3, .about,
+.goodreads,
+.press,
+.writing,
+.speaking,
+.poster,
+.quotes, .thumbs li {
+  width: 33.33333%; }
+
+.size2of3, .seedthings,
+.photo {
+  width: 66.66666%; }
+
+.size1of4, .info, footer .lets-talk,
+footer .links {
+  width: 25%; }
+
+.size3of4, .screen {
+  width: 75%; }
+
+.size1of5 {
+  width: 20%; }
+
+.size2of5 {
+  width: 40%; }
+
+.size3of5 {
+  width: 60%; }
+
+.size4of5 {
+  width: 80%; }
+
+.size1of6 {
+  width: 16.6666667%; }
+
+.lastUnit {
+  display: table-cell;
+  float: none;
+  width: auto;
+  *display: block;
+  *zoom: 1;
+  _position: relative;
+  _left: -3px;
+  _margin-right: -3px; }
+
+.in15 {
+  padding: 15px; }
+
+.in30 {
+  padding: 30px; }
+
+/* Goodreads */
+#gr_custom_widget_1329534522 center,
+#gr_custom_widget_1329534717 center {
+  display: none; }
+
+.gr_custom_container_1329534522,
+.gr_custom_container_1329534717 {
+  padding: 0 !important; }
+
+h2.gr_custom_header_1329534522,
+h2.gr_custom_header_1329534717 {
+  display: none; }
+
+.gr_custom_header_1329534522,
+.gr_custom_each_container_1329534522,
+.gr_custom_header_1329534717,
+.gr_custom_each_container_1329534717 {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ededed !important; }
+
+.gr_custom_container_1329534522,
+.gr_custom_container_1329534717 {
+  /* customize your Goodreads widget container here*/
+  border: 0px solid gray;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding: 10px 5px 10px 5px;
+  background-color: transparent;
+  color: #000000;
+  width: 100%; }
+
+.gr_custom_header_1329534522,
+.gr_custom_header_1329534717 {
+  /* customize your Goodreads header here*/
+  border-bottom: 1px solid gray;
+  width: 100%;
+  text-align: center;
+  font-size: 120%;
+  margin: 0;
+  padding: 15px 0;
+  text-align: left; }
+
+.gr_custom_header_1329534522 a,
+.gr_custom_header_1329534717 a {
+  color: #3f3f38; }
+
+.gr_custom_each_container_1329534522,
+.gr_custom_each_container_1329534717 {
+  /* customize each individual book container here */
+  width: 100%;
+  clear: both;
+  margin-bottom: 0;
+  overflow: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid #aaa; }
+
+.gr_custom_book_container_1329534522,
+.gr_custom_book_container_1329534717 {
+  /* customize your book covers here */
+  overflow: hidden;
+  height: 60px;
+  float: left;
+  margin-right: 4px;
+  width: 39px;
+  margin-right: 15px; }
+
+.gr_custom_author_1329534522,
+.gr_custom_author_1329534717 {
+  /* customize your author names here */
+  font-size: 10px; }
+
+.gr_custom_tags_1329534522,
+.gr_custom_tags_1329534717 {
+  /* customize your tags here */
+  font-size: 10px;
+  color: gray; }
+
+.gr_custom_rating_1329534522,
+.gr_custom_rating_1329534717 {
+  /* customize your rating stars here */
+  float: right; }
+
+.gr_custom_rating_1329534522 img,
+.gr_custom_rating_1329534717 img {
+  border: none !important; }
+
+/* Tumblr */
+ol.tumblr_posts {
+  list-style-type: none; }
+
+.tumblr_caption {
+  display: none; }
+
+.tumblr_photo_post {
+  float: left;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  /*width: 50%;*/
+  width: 50%;
+  height: 200px;
+  vertical-align: top;
+  word-wrap: break-word;
+  overflow: hidden; }
+
+.tumblr_photo_post:nth-child(2n) img {
+  margin-right: 0; }
+
+.tumblr_photo_post:nth-child(2n + 1) img {
+  margin-left: 0; }
+
+.tumblr_photo_post img {
+  border: 1px solid #EDEDED;
+  margin: 5px;
+  min-height: 100%;
+  width: 100%; }
+
+/* TYPOGRAPHY */
+html {
+  font-size: 13px; }
+
+h1, .h1 {
+  font-size: 246.153846%;
+  /* 32px / 13px */ }
+
+h2, .h2 {
+  font-size: 169.230769%;
+  /* 22px / 13px */ }
+
+h3, .h3 {
+  font-size: 123.076923%;
+  /* 16px / 13px */ }
+
+h4, .h4 {
+  font-size: 107.692308%;
+  /* 14px / 13px */ }
+
+h1, h2, h3, h4 {
+  margin: 15px 0; }
+
+p {
+  margin-bottom: 15px; }
+
+/* LINKS */
+a,
+a:visited {
+  color: #4260b8;
+  font-weight: bold;
+  text-decoration: none; }
+  a:hover,
+  a:visited:hover {
+    color: #354c92;
+    text-decoration: none; }
+    a:hover img, a:hover .pic,
+    a:visited:hover img,
+    a:visited:hover .pic {
+      opacity: 0.9; }
+
+.view-all {
+  float: right;
+  height: 23px;
+  line-height: 23px;
+  display: inline-block; }
+
+.hd a,
+.hd a:visited,
+.goodreads a,
+.goodreads a:visited,
+.seedthings a,
+.seedthings a:visited {
+  color: #3f3f38; }
+.hd a:hover,
+.goodreads a:hover,
+.seedthings a:hover {
+  color: #4260b8 !important;
+  text-decoration: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+/* LISTS */
+ul, ol,
+.plainlist,
+ul.simplelist,
+ol.simplelist {
+  list-style-type: none; }
+  ul li, ol li,
+  .plainlist li,
+  ul.simplelist li,
+  ol.simplelist li {
+    margin-bottom: 5px; }
+
+.simplelist {
+  padding-left: 15px; }
+  .simplelist:last-child {
+    margin-bottom: 15px; }
+
+ul.simplelist {
+  list-style-type: disc;
+  line-height: 1.6em; }
+
+ol.simplelist {
+  list-style-type: decimal;
+  line-height: 1.6em; }
+
+/* CONTENT */
+img {
+  max-width: 100%; }
+
+body {
+  /* background-color: #f4f4f6; */
+  border-top: 5px solid #a3f3fc;
+  font-family: "helveticaneue", "helvetica neue", "helveticaneueroman", "helveticaneue-roman", "helvetica neue roman","helvetica",  "arial",'texgyreherosregular', "tahoma", "geneva",  sans-serif;
+  font-size: 100%;
+  font-stretch: normal;
+  line-height: 1.8em;
+  color: #3f3f38; }
+
+.pic {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
+  width: 50px;
+  background-size: 100%;
+  background: url("/images/alli-circle.png") no-repeat 0 0;
+  margin-top: -13px;
+  margin-left: -65px; }
+
+cite {
+  display: block; }
+
+#wrapper,
+.content {
+  width: 960px;
+  margin: 0 auto; }
+
+.content.narrow {
+  width: 800px; }
+
+.in, .bd {
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.marg-in, header.main, .topmatter, .hd, .screen figure, .photo figure, .thumbs li figure {
+  margin-right: 15px;
+  margin-left: 15px; }
+
+/* HEADERS */
+header.main {
+  padding: 10px 0;
+  border-bottom: 1px solid #ededed; }
+  header.main #logo {
+    float: left; }
+  header.main nav {
+    float: right; }
+  header.main #logo,
+  header.main nav {
+    width: auto;
+    margin: 0;
+    font-size: 115.384615%;
+    /* 15px / 13px */
+    color: #c8c8c8; }
+  header.main nav ul li {
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 0; }
+  header.main a,
+  header.main a:visited {
+    color: #c8c8c8; }
+  header.main a:hover {
+    color: #4260b8 !important;
+    text-decoration: none; }
+
+.title {
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #EDEDED; }
+
+.row {
+  margin-bottom: 30px; }
+
+.hd {
+  padding: 15px 0;
+  margin-top: 0;
+  margin-bottom: 9px;
+  border-bottom: 1px solid #ededed; }
+  .hd h1, .hd h2, .hd h3, .hd h4 {
+    margin: 0; }
+
+.block, .goodreads,
+.seedthings,
+.about,
+.why-mentoring,
+.how-mentoring {
+  padding-bottom: 30px; }
+
+.goodreads,
+.photo,
+.screen,
+.how-mentoring {
+  float: right; }
+
+.seedthings,
+.about,
+.info,
+.press,
+.writing,
+.speaking,
+.poster,
+.quotes,
+.why-mentoring {
+  float: left; }
+
+.screen figure {
+  max-height: 570px; }
+.screen img {
+  max-width: 100%; }
+.screen img.mobile {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  width: 180px;
+  position: relative;
+  top: -330px;
+  left: -70px; }
+
+.info dl {
+  border-top: 1px solid #ededed;
+  margin: 12px 0 5px 0; }
+  .info dl dt, .info dl dd {
+    padding: 5px 0;
+    border-bottom: 1px solid #ededed; }
+  .info dl dt {
+    font-weight: 600;
+    float: left; }
+  .info dl dt:after {
+    content: ":";
+    margin: 0 5px 0 0; }
+
+.photo {
+  text-indent: -9999px; }
+  .photo figure {
+    background: url("/images/alli2.jpg") no-repeat 62% 70%;
+    background-size: 150%;
+    height: 275px; }
+  .photo img {
+    max-width: 100%; }
+
+.thumbs li img {
+  max-width: 100%; }
+.thumbs li a figcaption,
+.thumbs li a:visited figcaption {
+  color: #c8c8c8; }
+.thumbs li a:hover figcaption {
+  color: #4260b8 !important;
+  text-decoration: none; }
+
+.thumbs.small li img {
+  width: 100%; }
+
+/*li.portfolio:nth-child(4) {
+	display: none; }*/
+/* FOOTER */
+footer {
+  background: #d4d8d8;
+  border-top: 1px solid #c0c2c2;
+  padding: 15px 0 30px 0;
+  margin-top: 75px; }
+  footer p {
+    margin-bottom: 10px; }
+    footer p:last-of-type {
+      margin-bottom: 0; }
+  footer .hd {
+    border: none; }
+  footer .about,
+  footer .lets-talk {
+    -moz-box-shadow: 1px 0 0 #c0c2c2;
+    -webkit-box-shadow: 1px 0 0 #c0c2c2;
+    box-shadow: 1px 0 0 #c0c2c2; }
+
+/* MEDIA QUERIES */
+@media screen and (max-width:500px) {
+  #wrapper,
+  .content {
+    width: 100%; }
+
+  header.main #logo,
+  header.main nav,
+  footer .about,
+  footer .links,
+  footer .lets-talk,
+  .why-mentoring,
+  .how-mentoring,
+  .photo,
+  .about,
+  .press,
+  .writing,
+  .speaking,
+  .poster,
+  .quotes,
+  .info,
+  .screen,
+  .thumbs li,
+  .seedthings,
+  .goodreads {
+    float: none;
+    width: 100%; }
+
+  img.mobile,
+  a.view-all {
+    display: none; }
+
+  header.main #logo,
+  header.main nav {
+    font-size: 12px; }
+
+  header.main #logo {
+    font-size: 12px;
+    display: inline-block;
+    float: left;
+    width: 33.33333%; }
+
+  header.main nav {
+    float: left;
+    width: 66.66666%; }
+
+  header.main nav ul li {
+    float: right;
+    width: auto;
+    text-align: left;
+    margin-left: 15px; }
+
+  .photo figure {
+    height: 175px;
+    margin-bottom: 15px; }
+
+  .tumblr_photo_post {
+    float: none;
+    width: 100%;
+    height: 200px; }
+
+  .thumbs li img {
+    border: 1px solid #ededed; } }

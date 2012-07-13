@@ -1,0 +1,379 @@
+@import 'reset';
+@import 'grids';
+@import 'goodreads';
+@import 'tumblr';
+
+$ltblue: #a3f3fc;
+$ltgray: #c8c8c8;
+$txt: #3f3f38; 
+$link: #4260b8;
+$border: #ededed;
+
+$in : 15px;
+
+/* TYPOGRAPHY */
+html {
+	font-size: 13px; }
+	
+h1, .h1 { font-size: 246.153846%; /* 32px / 13px */ }
+h2, .h2 { font-size: 169.230769%; /* 22px / 13px */ }
+h3, .h3 { font-size: 123.076923%; /* 16px / 13px */ }
+h4, .h4 { font-size: 107.692308%; /* 14px / 13px */ }
+
+h1, h2, h3, h4 { 
+	margin: $in 0; }
+
+p {
+	margin-bottom: $in; }
+		
+/* LINKS */
+a,
+a:visited {
+	color: $link;
+	font-weight: bold;
+	text-decoration: none; 
+	&:hover { 
+		color: darken($link, 10%);
+		text-decoration: none;
+		img, .pic {
+			opacity: 0.9; }
+	}
+}
+.view-all {
+	float: right;
+	height: 23px;
+	line-height: 23px;
+	display: inline-block; }
+.hd,
+.goodreads,
+.seedthings {
+	a, 
+	a:visited {
+			color: $txt; }
+	a:hover {
+		color: $link !important;
+		text-decoration: none; }
+}
+
+.left {
+	float: left; }
+.right {
+	float: right; }
+
+/* LISTS */
+
+ul, ol,
+.plainlist {
+	list-style-type: none;
+	li {
+		margin-bottom: 5px; }
+}
+.simplelist {
+	padding-left: 15px;
+	&:last-child {
+		margin-bottom: 15px; } 
+}
+ul.simplelist {
+	@extend .plainlist;
+	list-style-type: disc;
+  line-height: 1.6em;
+}
+ol.simplelist {
+	@extend .plainlist;
+	list-style-type: decimal;
+	line-height: 1.6em;
+}
+
+		
+/* CONTENT */
+img {
+	max-width: 100%; }
+	
+body {
+	/* background-color: #f4f4f6; */
+	border-top: 5px solid $ltblue;
+	font-family: "helveticaneue", "helvetica neue", "helveticaneueroman", "helveticaneue-roman", "helvetica neue roman","helvetica",  "arial",'texgyreherosregular', "tahoma", "geneva",  sans-serif;
+  font-size: 100%;
+  font-stretch: normal;
+  line-height:1.8em;
+  color: $txt; }
+
+
+.pic {
+	position: absolute;
+	display: inline-block;
+	vertical-align: middle;
+	height: 50px;
+	width: 50px;
+	background-size: 100%;
+	background: url('/images/alli-circle.png') no-repeat 0 0;
+	margin-top: -13px;
+	margin-left: -65px;
+}
+cite {
+	display: block; }
+	
+#wrapper,
+.content {
+  width: 960px;
+  margin: 0 auto; }
+
+.content.narrow {
+	width: 800px; }
+.in {
+	padding-right: $in;
+	padding-left: $in; }
+.marg-in {
+	margin-right: $in;
+	margin-left: $in; }
+
+/* HEADERS */
+header.main {
+	@extend .line;
+	padding: 10px 0;
+	@extend .marg-in;
+	border-bottom: 1px solid $border;
+	#logo {
+		float: left; }
+	nav {
+		float: right; }
+	#logo,
+	nav {
+		width: auto;
+		margin: 0;
+		font-size: 115.384615%; /* 15px / 13px */;
+		color: $ltgray; }
+	nav ul li {
+		float: right;
+		margin-left: 30px;
+		margin-bottom: 0; }
+	a, 
+	a:visited {
+			color: $ltgray; }
+	a:hover {
+		color: $link !important;
+		text-decoration: none; }
+}
+.topmatter {
+	@extend .line;
+	@extend .marg-in; }
+	
+.title {
+	padding: 0 0 20px 0;
+	border-bottom: 1px solid #EDEDED; }
+	
+.row {
+	@extend .line;
+	margin-bottom: 30px; }
+	
+.hd { 
+	@extend .line;
+	padding: $in 0;
+	margin-top: 0;
+	margin-bottom: $in*.6;
+	@extend .marg-in;
+	border-bottom: 1px solid $border;
+	h1, h2, h3, h4 { 
+		margin: 0; } }
+.bd {
+	@extend .in; }
+	
+.block {
+	padding-bottom: $in*2; }
+
+.goodreads,
+.seedthings,
+.about,
+.why-mentoring,
+.how-mentoring {
+	@extend .block;
+	@extend .size1of2; }
+	
+.goodreads,
+.photo,
+.screen,
+.how-mentoring {
+	float: right; }
+	
+.seedthings,
+.about,
+.info,
+.press,
+.writing,
+.speaking,
+.poster,
+.quotes,
+.why-mentoring, { 
+	float: left; }
+
+.seedthings,
+.photo {
+	@extend .size2of3; }
+	
+.about,
+.goodreads,
+.press,
+.writing,
+.speaking,
+.poster,
+.quotes {
+	@extend .size1of3; }
+
+.screen {
+	@extend .size3of4; }
+
+.info {
+	@extend .size1of4; }
+	
+.screen {
+	figure {
+		@extend .marg-in;
+		max-height: 570px; }
+	img {
+		max-width: 100%; }
+	img.mobile {
+		background-color: transparent;
+		padding: 0;
+		border: 0;
+		width: 180px;
+		position: relative;
+		top: -330px;
+		left: -70px; }
+}
+.info dl {
+	border-top: 1px solid #ededed;
+	margin: 12px 0 5px 0; 
+	dt, dd {
+		padding: 5px 0;
+		border-bottom: 1px solid #ededed; }
+	dt {
+		font-weight: 600;
+		float: left; }
+	dt:after {
+		content: ":";
+		margin: 0 5px 0 0; }
+}
+	
+.photo {
+	text-indent: -9999px;
+	figure {
+		background: url('/images/alli2.jpg') no-repeat 62% 70%;
+		background-size: 150%;
+		height: 275px;
+		@extend .marg-in; }
+	img {
+		max-width: 100%; }
+}
+
+.thumbs li {
+	@extend .unit;
+	@extend .size1of3;
+	figure {
+		@extend .marg-in; }
+	img {
+		max-width: 100%; }
+	a figcaption, 
+	a:visited figcaption {
+			color: $ltgray; }
+	a:hover figcaption {
+		color: $link !important;
+		text-decoration: none; }
+}
+.thumbs.small li {
+	img { width: 100%; }
+}
+/*li.portfolio:nth-child(4) {
+	display: none; }*/
+
+
+/* FOOTER */
+footer { 
+	background: #d4d8d8;
+	border-top: 1px solid #c0c2c2;
+	padding: 15px 0 30px 0;
+	margin-top: 75px;
+	p {
+		margin-bottom: 10px; 
+		&:last-of-type {
+			margin-bottom: 0; }
+	}
+	.hd { 
+		border: none; }
+	.about {
+		@extend .unit;
+		@extend .size1of2; }
+	.lets-talk,
+	.links {
+		@extend .unit;
+		@extend .size1of4; }
+	.about,
+	.lets-talk {
+		-moz-box-shadow: 1px 0 0 #c0c2c2;
+		-webkit-box-shadow: 1px 0 0 #c0c2c2;
+		box-shadow: 1px 0 0 #c0c2c2;
+	}
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:500px){
+  #wrapper,
+  .content {
+    width: 100%; }
+  header.main #logo, 
+  header.main nav,
+  footer .about,
+  footer .links,
+  footer .lets-talk,
+  .why-mentoring,
+  .how-mentoring,
+  .photo,
+  .about,
+  .press,
+  .writing,
+  .speaking,
+  .poster,
+  .quotes,
+  .info,
+  .screen,
+  .thumbs li,
+  .seedthings,
+  .goodreads {
+    float: none;
+    width: 100%; }
+  
+  img.mobile,
+  a.view-all {
+    display: none; }
+  
+	header.main #logo,
+  header.main nav {
+    font-size: 12px; }
+	
+	header.main #logo {
+		font-size: 12px;
+		display: inline-block;
+		float: left;
+		width: 33.33333%; }
+	header.main nav {
+		float: left;
+		width: 66.66666%; }	
+	header.main nav ul li {
+		float: right;
+		width: auto;
+		text-align: left;
+		margin-left: 15px; }
+
+  .photo figure {
+    height: 175px;
+    margin-bottom: 15px }
+
+  .tumblr_photo_post {
+    float: none;
+    width: 100%;
+    height: 200px; }
+
+  .thumbs li img {
+    border: 1px solid #ededed; }
+
+}

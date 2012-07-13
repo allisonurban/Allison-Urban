@@ -1,0 +1,26 @@
+/* Tumblr */
+ol.tumblr_posts {
+	list-style-type: none; }
+.tumblr_caption {
+	display: none; }
+.tumblr_photo_post {
+	float: left;
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	/*width: 50%;*/
+	width: 50%;
+	height: 200px;
+	vertical-align: top;
+	word-wrap: break-word;
+	overflow: hidden; }
+.tumblr_photo_post:nth-child(2n) img {
+	margin-right: 0;}
+.tumblr_photo_post:nth-child(2n + 1) img {
+	margin-left: 0;}
+.tumblr_photo_post img {
+	border: 1px solid #EDEDED;
+	margin: 5px;
+	min-height: 100%;
+	width: 100%; }
