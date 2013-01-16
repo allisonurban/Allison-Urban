@@ -127,6 +127,19 @@ cite {
 	margin-right: $in;
 	margin-left: $in; }
 
+.subnav {
+	@extend .line;
+	@extend .marg-in;
+	padding: $in 0;
+	border-bottom: 1px solid $border;
+	li {
+		float: left;
+		margin: 0; }
+	a {
+		@extend .in;
+		cursor: pointer; }
+}
+
 /* HEADERS */
 header.main {
 	@extend .line;

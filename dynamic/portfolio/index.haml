@@ -1,7 +1,32 @@
 = render_partial 'header'
 
+/ %nav.subnav
+/   %ul
+/     %li
+/       %a Front-End Development
+/     %li
+/       %a Data / Analytics
 %section.content
-  
+  %section.row#mailchimp-2012-annual-report
+    %header
+      %h2.hd MailChimp Annual Report
+    %article.screen
+      %figure
+        %a{:href => "http://mailchimp.com/2012"}
+          %img{:alt => "MailChimp Annual Report", :src => "../images/portfolio/mailchimp-2012-annual-report.png", :title => "MailChimp 2012 Annual Report"}
+    %section.info
+      .bd
+        %p MailChimp had a great year. We collected data from all around the company to tell a story about what our users have been up to and how we've grown as a company.
+        %dl
+          %dt Role
+          %dd Data
+          %dt Completed
+          %dd January 2012
+          %dt Client
+          %dd MailChimp
+        %p
+          %a.launch{:href => "http://mailchimp.com/2012"} Launch &rarr;
+            
   %section.row#tinyletter
     %header
       %h2.hd TinyLetter
