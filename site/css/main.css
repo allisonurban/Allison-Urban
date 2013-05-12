@@ -82,7 +82,7 @@ hr {
 input, select {
   vertical-align: middle; }
 
-.line:after, header.main:after, .topmatter:after, .row:after, .hd:after, .lastUnit:after {
+.line:after, .subnav:after, header.main:after, .topmatter:after, .row:after, .hd:after, .lastUnit:after {
   clear: both;
   display: block;
   visibility: hidden;
@@ -92,7 +92,7 @@ input, select {
   font-size: xx-large;
   content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x "; }
 
-.line, header.main, .topmatter, .row, .hd {
+.line, .subnav, header.main, .topmatter, .row, .hd {
   *zoom: 1; }
 
 .unit, .thumbs li, footer .about, footer .lets-talk,
@@ -405,13 +405,22 @@ cite {
 .content.narrow {
   width: 800px; }
 
-.in, .bd {
+.in, .subnav a, .bd {
   padding-right: 15px;
   padding-left: 15px; }
 
-.marg-in, header.main, .topmatter, .hd, .screen figure, .photo figure, .thumbs li figure {
+.marg-in, .subnav, header.main, .topmatter, .hd, .screen figure, .photo figure, .thumbs li figure {
   margin-right: 15px;
   margin-left: 15px; }
+
+.subnav {
+  padding: 15px 0;
+  border-bottom: 1px solid #ededed; }
+  .subnav li {
+    float: left;
+    margin: 0; }
+  .subnav a {
+    cursor: pointer; }
 
 /* HEADERS */
 header.main {
