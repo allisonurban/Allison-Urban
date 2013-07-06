@@ -330,6 +330,36 @@ footer {
 	}
 }
 
+.button {
+	display: inline-block;
+	background: #d4d8d8;
+	border: 1px solid #c0c2c2;
+	padding: 8px 22px;
+	border-radius: 3px;
+	&:hover { 
+		color: darken(#d4d8d8, 10%);
+		background: darken(#d4d8d8, 5%); }
+}
+
+.book,
+.paper {
+	@extend .line;
+	.title {
+		display: inline;
+		float: left;
+		border: none;
+		padding: 0;
+		&:after {
+			font-weight: normal;
+			color: $txt;
+			content: ', by\00a0';
+		}
+	}
+	.author {
+		font-style: normal;
+	}
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width:500px){
