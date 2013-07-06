@@ -270,9 +270,12 @@ header.main {
 .photo {
 	text-indent: -9999px;
 	figure {
-		background: url('/images/alli2.jpg') no-repeat 62% 70%;
+/*  background: url('/images/alli2.jpg') no-repeat 62% 70%;
 		background-size: 150%;
-		height: 275px;
+		height: 275px; */
+		background: url("/images/alli-in-color.jpg") no-repeat 62% 80%;
+		background-size: 100%;
+		height: 300px;
 		@extend .marg-in; }
 	img {
 		max-width: 100%; }
