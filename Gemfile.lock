@@ -13,6 +13,8 @@ GEM
     mongrel (1.2.0.pre2)
       daemons (~> 1.0.10)
       gem_plugin (~> 0.2.3)
+    net-scp (1.1.2)
+      net-ssh (>= 2.6.5)
     net-ssh (2.6.8)
     rack (1.5.2)
     sass (3.2.9)
@@ -24,4 +26,5 @@ PLATFORMS
 DEPENDENCIES
   frank
   haml
+  net-scp
   sass
